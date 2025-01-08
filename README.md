@@ -1,5 +1,3 @@
-Machine Learning Project Report - Lubna Mawaddah
-
 <div align="center">  
   <h1>Book Recommendation System Using Collaborative and Content-Based Filtering</h1>  
 </div>
@@ -116,6 +114,8 @@ These two datasets will help in generating personalized book recommendations for
   - Number of rows : 1149780
   - Number of columns : 3
 
+---
+### Visualization
 
 **- Top 10 Books Based on the Most Ratings**
 
@@ -214,9 +214,7 @@ TF-IDF (Term Frequency-Inverse Document Frequency) is a statistical measure used
 
 Formula:
 1. **Term Frequency (TF)**:
-  $$ 
-  \text{TF}(t) = \frac{\text{Number of times term t appears in a document}}{\text{Total number of terms in the document}}
-  $$
+  $`\text{TF}(t) = \frac{\text{Number of times term t appears in a document}}{\text{Total number of terms in the document}}`$
 
 2. **Inverse Document Frequency (IDF)**:
   $$ 
