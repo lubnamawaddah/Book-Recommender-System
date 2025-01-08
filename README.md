@@ -7,18 +7,7 @@
 </div>
 
 Recommendation systems are a type of information filtering system designed to suggest specific items to users. These systems are applied across various domains such as movies, music, news, books, and products [1]. A book search recommendation system is important for narrowing down large datasets, making the book search process more efficient compared to traditional syntax-based search methods. The goal of developing such a system is to help users easily find relevant references that meet their needs [2]. Recommendation systems typically use two main techniques for filtering information: Content-based filtering and Collaborative filtering. Content-based filtering recommends items to users that are similar in content to those they have already interacted with [3]. Collaborative filtering, on the other hand, predicts a user's interests based on data from multiple users, leveraging their preferences or tastes (collaboration) [4]. This project aims to develop a book recommendation system using both content-based and collaborative filtering techniques. The goal is to enhance the user experience by providing personalized book suggestions based on their preferences and interactions with books, making the search and discovery process more effective and engaging.
-
----
-
-**Reference :**
-
-[1] P. Mathew et al., ["Book Recommendation System through content based and collaborative filtering method"](https://ieeexplore.ieee.org/abstract/document/7684166) International Conference on Data Mining and Advanced Computing (SAPIENCE), Ernakulam, India, 2016.
-
-[2] Missi Hikmatyar and Ruuhwan, ["Book Recommendation System Development Using User-Based Collaborative Filtering"](https://iopscience.iop.org/article/10.1088/1742-6596/1477/3/032024/meta) IOP Publishing, Vol. 1477, 2020.
-
-[3] Avi Rana and K. Deeba, ["Online Book Recommendation System using Collaborative Filtering (With Jaccard Similarity)"](https://iopscience.iop.org/article/10.1088/1742-6596/1362/1/012130/meta) Journal of Physics: Conference Series, Vol. 1362, 2019.
-
-[4] Okon Emmanuel et al., ["An Improved Online Book Recommender System using Collaborative Filtering Algorithm"](https://www.researchgate.net/publication/324897120_An_Improved_Online_Book_Recommender_System_using_Collaborative_Filtering_Algorithm) International Journal of Computer Applications, Vol. 179, 2018. 
+ 
 
 <div align="center">  
   <h2>Business Understanding</h2>
@@ -217,9 +206,11 @@ Formula:
 
   $`\text{TF}(t) = \frac{\text{Number of times term t appears in a document}}{\text{Total number of terms in the document}}`$
 
-2. **Inverse Document Frequency (IDF)**:\
+
+2. **Inverse Document Frequency (IDF)**:
 
   $`\text{IDF}(t) = \log \left( \frac{\text{Total number of documents}}{\text{Number of documents containing term t}} \right)`$
+
 
 3. **TF-IDF Calculation**:
 
@@ -369,3 +360,14 @@ Where:
 - $`n`$ is the number of data points 
 
 In this case, the MAE = 0.1502, which means that, on average, the model's predictions are off by 0.15 ratings. This suggests that while the model is not perfect, it is making fairly accurate predictions overall.
+
+---
+**Reference :**
+
+[1] P. Mathew et al., ["Book Recommendation System through content based and collaborative filtering method"](https://ieeexplore.ieee.org/abstract/document/7684166) International Conference on Data Mining and Advanced Computing (SAPIENCE), Ernakulam, India, 2016.
+
+[2] Missi Hikmatyar and Ruuhwan, ["Book Recommendation System Development Using User-Based Collaborative Filtering"](https://iopscience.iop.org/article/10.1088/1742-6596/1477/3/032024/meta) IOP Publishing, Vol. 1477, 2020.
+
+[3] Avi Rana and K. Deeba, ["Online Book Recommendation System using Collaborative Filtering (With Jaccard Similarity)"](https://iopscience.iop.org/article/10.1088/1742-6596/1362/1/012130/meta) Journal of Physics: Conference Series, Vol. 1362, 2019.
+
+[4] Okon Emmanuel et al., ["An Improved Online Book Recommender System using Collaborative Filtering Algorithm"](https://www.researchgate.net/publication/324897120_An_Improved_Online_Book_Recommender_System_using_Collaborative_Filtering_Algorithm) International Journal of Computer Applications, Vol. 179, 2018.
