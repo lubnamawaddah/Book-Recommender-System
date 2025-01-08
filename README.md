@@ -214,17 +214,16 @@ TF-IDF (Term Frequency-Inverse Document Frequency) is a statistical measure used
 
 Formula:
 1. **Term Frequency (TF)**:
+
   $`\text{TF}(t) = \frac{\text{Number of times term t appears in a document}}{\text{Total number of terms in the document}}`$
 
-2. **Inverse Document Frequency (IDF)**:
-  $$ 
-  \text{IDF}(t) = \log \left( \frac{\text{Total number of documents}}{\text{Number of documents containing term t}} \right)
-  $$
+2. **Inverse Document Frequency (IDF)**:\
+
+  $`\text{IDF}(t) = \log \left( \frac{\text{Total number of documents}}{\text{Number of documents containing term t}} \right)`$
 
 3. **TF-IDF Calculation**:
-  $$ 
-  \text{TF-IDF}(t) = \text{TF}(t) \times \text{IDF}(t)
-  $$
+
+  $`\text{TF-IDF}(t) = \text{TF}(t) \times \text{IDF}(t)`$
 
 How it works:
 - High TF-IDF score: Indicates that the term is important to the document and relatively rare across other documents.
@@ -236,9 +235,8 @@ How it works:
 Cosine similarity is a metric used to measure how similar two vectors are, irrespective of their size. It is commonly used in text mining and recommendation systems to measure the similarity between two documents (or two items) based on their vector representations. Cosine similarity ranges from -1 (completely dissimilar) to 1 (completely similar).
 
 Formula:
-$$ 
-\text{Cosine Similarity}(A, B) = \frac{A \cdot B}{\|A\| \|B\|}
-$$ 
+
+$`\text{Cosine Similarity}(A, B) = \frac{A \cdot B}{\|A\| \|B\|}`$
 
 Where:
 - A . B is the dot product of two vectors A and B.
@@ -329,9 +327,8 @@ After the book recommendation function is applied, the results are evaluated usi
 **Precision at K** is an evaluation metric used to assess the quality of recommendations in a recommendation system. Precision at K measures how many of the recommended items in the top-K recommendations are relevant (correct) according to the user's preferences or needs.
 
 **Formula :**
-$$
-\text{Precision at K} = \frac{\text{Number of relevant recommendations in the top K recommendations}}{K}
-$$
+
+$`\text{Precision at K} = \frac{\text{Number of relevant recommendations in the top K recommendations}}{K}`$
 
 
 The result of Precision at 5 is 0.80, it means that 80% of the top 5 recommended books are relevant to the user's interests. In other words, out of the 5 recommended books, 4 are relevant (matching the relevant_books list), and 1 is not relevant.
@@ -348,13 +345,13 @@ After training the model, the model is evaluated using the RMSE and MAE metrics.
 RMSE is the square root of MSE and measures the prediction error in the same units as the original data. RMSE provides a clearer picture of both large and small model errors.
 
 Formula :
-$$
-RMSE = \sqrt{MSE} = \sqrt{\frac{1}{n} \sum_{i=1}^{n} (y_i - \hat{y}_i)^2}
-$$
-Where :
-- $ y_i $ is the actual value
-- $ \hat{y}_i $ is the predicted value
-- $ n $ is the number of data points
+
+$`RMSE = \sqrt{MSE} = \sqrt{\frac{1}{n} \sum_{i=1}^{n} (y_i - \hat{y}_i)^2}`$
+
+Where:  
+- $`y_i`$ is the actual value  
+- $`\hat{y}_i`$ is the predicted value  
+- $`n`$ is the number of data points
 
 In this case, the RMSE = 0.1944, which means the model’s predictions, on average, deviate from the actual ratings by approximately 0.19. This is a good indication that the model’s predictions are relatively close to the true values, but still with some room for improvement.
 
@@ -363,12 +360,12 @@ In this case, the RMSE = 0.1944, which means the model’s predictions, on avera
 MAE measures the average absolute difference between the predicted values and the actual values. The lower the MAE value, the better the model is at making accurate predictions.
 
 Formula :
-$$
-MAE = \frac{1}{n} \sum_{i=1}^{n} |y_i - \hat{y}_i|
-$$
-Where :
-- $ y_i $ is the actual value
-- $ \hat{y}_i $ is the predicted value
-- $ n $ is the number of data points
+
+$`MAE = \frac{1}{n} \sum_{i=1}^{n} |y_i - \hat{y}_i|`$  
+
+Where:  
+- $`y_i`$ is the actual value  
+- $`\hat{y}_i`$ is the predicted value  
+- $`n`$ is the number of data points 
 
 In this case, the MAE = 0.1502, which means that, on average, the model's predictions are off by 0.15 ratings. This suggests that while the model is not perfect, it is making fairly accurate predictions overall.
